@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Imprint
-//
-//  Created by Apple  on 01/04/26.
-//
-
 import UIKit
 
 @main
