@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sG5-Z5-Ccm">
-                                <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="784"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                         </subviews>
@@ -27,7 +27,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sG5-Z5-Ccm" secondAttribute="trailing" id="5sY-nf-oOD"/>
-                            <constraint firstItem="sG5-Z5-Ccm" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="F0E-W9-ZnE"/>
+                            <constraint firstItem="sG5-Z5-Ccm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="F0E-W9-ZnE"/>
                             <constraint firstItem="sG5-Z5-Ccm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="J2g-LF-lrg"/>
                             <constraint firstAttribute="bottom" secondItem="sG5-Z5-Ccm" secondAttribute="bottom" constant="68" id="KwR-sd-ej9"/>
                         </constraints>

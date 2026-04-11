@@ -11,7 +11,7 @@ class Memories: UIViewController {
         grabber.layer.cornerRadius = 2.5
         view.addSubview(grabber)
         print("Memories loaded")
-        view.backgroundColor = .blue
+        view.backgroundColor = .systemBackground
         // Do any additional setup after loading the view.
     }
     
