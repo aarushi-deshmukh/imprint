@@ -8,7 +8,7 @@ class Explore: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     var sheetY: CGFloat = 0
     var maxY: CGFloat = 0
-    let minY: CGFloat = 100 // expanded
+    let minY: CGFloat = 100 
     var midY: CGFloat = 0
     let feedVC = Memories()
     

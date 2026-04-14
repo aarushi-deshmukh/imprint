@@ -1,7 +1,7 @@
 import UIKit
 
 class Memories: UIViewController {
-
+    
     @IBOutlet weak var memoryView: UICollectionView!
     let grabber = UIView(frame: CGRect(x: 0, y: 8, width: 40, height: 5))
     override func viewDidLoad() {
@@ -12,7 +12,6 @@ class Memories: UIViewController {
         view.addSubview(grabber)
         print("Memories loaded")
         view.backgroundColor = .systemBackground
-        // Do any additional setup after loading the view.
     }
     
 }
