@@ -24,8 +24,8 @@ class SignUp: UIViewController {
             do {
                 try await NetworkManager.shared.signUp(email: email, password: password)
                 print("Signup successful")
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "HomeVC")
+                let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "ProfileVC")
                 
                 navigationController?.pushViewController(vc, animated: true)
             } catch {

@@ -95,7 +95,7 @@
         <!--View Controller-->
         <scene sceneID="MhK-dZ-fUu">
             <objects>
-                <viewController id="rgp-hj-VIj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FriendVC" id="rgp-hj-VIj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mrh-U6-v7m">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

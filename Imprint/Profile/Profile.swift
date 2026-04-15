@@ -124,6 +124,34 @@ class Profile: UIViewController {
         
         return layout
     }
+    
+    @IBAction func logOut(_ sender: UIButton){
+        Task {
+            do {
+                try await NetworkManager.shared.logout()
+                
+                // Navigate to login screen
+                DispatchQueue.main.async {
+                    self.navigateToLogin()
+                }
+                
+            } catch {
+                print("Logout failed: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func navigateToLogin() {
+        
+        let storyboard = UIStoryboard(name: "Auth", bundle: nil)
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "AuthVC")
+        
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first {
+            window.rootViewController = loginVC
+            window.makeKeyAndVisible()
+        }
+    }
 }
 
 extension Profile: UICollectionViewDelegate, UICollectionViewDataSource {

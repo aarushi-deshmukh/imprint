@@ -239,7 +239,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="347" height="138"/>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RAj-ol-NXs">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="follow_cell" id="RAj-ol-NXs">
                                         <rect key="frame" x="9.6666666666666661" y="470" width="374" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4kC-cq-ya5">
@@ -284,12 +284,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="__rayyy_85" id="CPl-pS-1oS">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="qBA-Vg-38T">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="W5x-Ii-CDh">
-                                <rect key="frame" x="322.66666666666669" y="4.6666666666666687" width="50.333333333333314" height="34.666666666666664"/>
+                        <barButtonItem key="rightBarButtonItem" id="qBA-Vg-38T">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="W5x-Ii-CDh">
+                                <rect key="frame" x="337" y="8.6666666666666643" width="36" height="26.666666666666664"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="gearshape.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="logOut:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="E1Q-m7-bMm"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
