@@ -25,6 +25,4 @@ extension Memories: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = memoryView.dequeueReusableCell(withReuseIdentifier: "memory_cell", for: indexPath)
         return cell
     }
-    
-    
 }

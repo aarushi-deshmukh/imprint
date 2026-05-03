@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image=" -4" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-Mz-HDM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sokethign" translatesAutoresizingMaskIntoConstraints="NO" id="jnW-Mz-HDM">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="450"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="450" id="e8c-C9-JMM"/>
@@ -61,7 +61,7 @@
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="XLa-Sk-aPh" kind="show" id="6A6-qd-Flu"/>
+                                            <segue destination="XLa-Sk-aPh" kind="show" identifier="goToSignUp" id="6A6-qd-Flu"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWN-jB-oyf">
@@ -211,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lQV-gb-v9U">
-                                <rect key="frame" x="20" y="244.00000000000003" width="353" height="423.66666666666674"/>
+                                <rect key="frame" x="20" y="244.00000000000003" width="353" height="493.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customize your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pME-S7-4Ok">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
@@ -219,36 +219,54 @@
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lj9-lR-SIg">
+                                        <rect key="frame" x="0.0" y="40.333333333333314" width="353" height="50"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0aP-tC-DHf"/>
+                                            <constraint firstAttribute="height" constant="50" id="ojS-NG-dJm"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Yck-VK-J0n" appends="YES" id="TTP-yA-ZZm"/>
+                                        </connections>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0G-8y-Vtt">
-                                        <rect key="frame" x="0.0" y="40.333333333333314" width="353" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="110.33333333333331" width="353" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFz-Eg-SYD">
-                                        <rect key="frame" x="0.0" y="80.666666666666686" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="150.66666666666669" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTi-M7-vWM">
-                                        <rect key="frame" x="0.0" y="134.66666666666669" width="353" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="204.66666666666669" width="353" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6B2-82-ngB">
-                                        <rect key="frame" x="0.0" y="175" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="245" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bX-Hh-4gP">
-                                        <rect key="frame" x="0.0" y="229" width="353" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="299" width="353" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="G7Q-vR-BPS">
-                                        <rect key="frame" x="0.0" y="269.33333333333337" width="353" height="100"/>
+                                        <rect key="frame" x="0.0" y="339.33333333333337" width="353" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="h10-BI-nQs"/>
@@ -258,7 +276,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLE-9o-jEc">
-                                        <rect key="frame" x="0.0" y="389.33333333333337" width="353" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="459.33333333333337" width="353" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Create Profile">
                                             <color key="baseBackgroundColor" name="AccentColor"/>
@@ -282,11 +300,13 @@
                     <connections>
                         <outlet property="bioTextView" destination="G7Q-vR-BPS" id="m2g-9d-m49"/>
                         <outlet property="fullnameField" destination="6B2-82-ngB" id="d8g-rR-Rb4"/>
+                        <outlet property="pfpView" destination="Lj9-lR-SIg" id="9dR-CK-YUu"/>
                         <outlet property="usernameField" destination="AFz-Eg-SYD" id="aPo-qH-68z"/>
                         <segue destination="t0H-ix-eXc" kind="show" identifier="goToMainApp" id="uPw-Mv-CnT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HhZ-5q-Xww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Yck-VK-J0n"/>
             </objects>
             <point key="canvasLocation" x="2837" y="-92"/>
         </scene>
@@ -391,8 +411,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name=" -4" width="675" height="1200"/>
         <image name="envelope.fill" catalog="system" width="128" height="85"/>
+        <image name="sokethign" width="736" height="1594"/>
         <namedColor name="AccentColor">
             <color red="0.70588235294117652" green="0.61568627450980395" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

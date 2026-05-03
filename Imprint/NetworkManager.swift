@@ -61,5 +61,17 @@ final class NetworkManager {
         return publicURL.absoluteString
     }
     
-    
+    func fetchProfile() async throws -> [ProfileDB] {
+        print("Entered fetchProf")
+        let session = try await client.auth.session
+        let userId = session.user.id
+        let result: [ProfileDB] = try await client.database
+            .from("profiles")
+            .select()
+            .eq("id", value: userId)
+            .execute()
+            .value
+        
+        return result
+    }
 }
